@@ -1,0 +1,110 @@
+[
+    {
+        "id": "flow_ltakn_simple",
+        "type": "tab",
+        "label": "LTAKN Simples",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "mqtt_in_ltakn_s",
+        "type": "mqtt in",
+        "z": "flow_ltakn_simple",
+        "name": "MQTT Entrada",
+        "topic": "ltakn/alerta",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "mqtt_broker_ltakn_s",
+        "inputs": 0,
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "txt_status",
+                "txt_abrigo",
+                "txt_distancia"
+            ]
+        ]
+    },
+    {
+        "id": "txt_status",
+        "type": "ui_text",
+        "z": "flow_ltakn_simple",
+        "group": "grupo_simple_ltakn",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "Status",
+        "label": "Status:",
+        "format": "{{msg.payload.status}}",
+        "layout": "row-spread",
+        "x": 490,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "txt_abrigo",
+        "type": "ui_text",
+        "z": "flow_ltakn_simple",
+        "group": "grupo_simple_ltakn",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "name": "Abrigo",
+        "label": "Abrigo Próximo:",
+        "format": "{{msg.payload.abrigo_proximo}}",
+        "layout": "row-spread",
+        "x": 490,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "txt_distancia",
+        "type": "ui_text",
+        "z": "flow_ltakn_simple",
+        "group": "grupo_simple_ltakn",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "Distância",
+        "label": "Distância (km):",
+        "format": "{{msg.payload.distancia_km || '-'}}",
+        "layout": "row-spread",
+        "x": 540,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "mqtt_broker_ltakn_s",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true
+    },
+    {
+        "id": "grupo_simple_ltakn",
+        "type": "ui_group",
+        "name": "Monitoramento",
+        "tab": "aba_simple_ltakn",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "aba_simple_ltakn",
+        "type": "ui_tab",
+        "name": "LTAKN Status",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
