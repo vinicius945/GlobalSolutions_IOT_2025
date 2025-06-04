@@ -66,51 +66,20 @@ O Node-RED exibe essas informações no painel do usuário
 
 1. Simulador Wokwi (ESP32)
 
-Acesse o projeto: Wokwi Link
+Acesse o projeto: https://wokwi.com/projects/432604319105231873
 
 Clique em Start Simulation
 
 2. Node-RED (Interface Web)
 
-Importe o JSON ltakn_dashboard_simplificado.json
+Importe o JSON disponibilizado na pasta "Node-Red"
 
 Execute o flow
 
-Acesse: http://localhost:1880/ui
-
-📦 Requisitos Atendidos (Global Solution)
-
-Requisito
-
-Status
-
-MQTT
-
-✅
-
-JSON estruturado
-
-✅
-
-3 dispositivos (sensor, botão, LED)
-
-✅
-
-Gateway funcional (Node-RED)
-
-✅
-
-Dashboard visual
-
-✅
-
-Tópico personalizado
-
-✅
-
 🎥 Apresentação em Vídeo
 
-Link para o vídeo explicativo
+https://youtu.be/Ipavvf_EzR0
+
 
 👨‍💻 Integrantes - Grupo LTAKN
 
@@ -124,6 +93,3 @@ Vinicius Prates Altafini – RM: 559183
 [GitHub](https://github.com/vinicius945)
 
 
-Link do Video:
-
-https://youtu.be/Ipavvf_EzR0
