@@ -115,10 +115,15 @@ Link para o vídeo explicativo
 👨‍💻 Integrantes - Grupo LTAKN
 
 Enzo Prado Soddano – RM: 557937
-GitHub
+[GitHub](https://github.com/DerBrasilianer)
 
 Lucas Resende Lima – RM: 556564
-GitHub
+[GitHub](https://github.com/lucasresendelima)
 
 Vinicius Prates Altafini – RM: 559183
-GitHub
+[GitHub](https://github.com/vinicius945)
+
+
+Link do Video:
+
+https://youtu.be/Ipavvf_EzR0
